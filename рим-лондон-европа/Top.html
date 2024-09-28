@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet" />
+        <title>Document</title>
+    </head>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #333;
+            padding: 200px;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .card {
+            background-color: #fff;
+            display: inline-block;
+            border-radius: 24px;
+            overflow: hidden;
+            font-family: Poppins;
+        }
+
+        .card__image {
+            height: 325px;
+            width: 100%;
+        }
+
+        .card__body {
+            padding: 25px 20px 40px;
+        }
+
+        .card__title {
+            display: inline-block;
+            margin-right: 100px;
+            margin-bottom: 20px;
+        }
+
+        .card__price {
+            display: inline-block;
+        }
+
+        .card__trip-icon {
+            margin-right: 14px;
+        }
+
+        .card__trip-duration {
+            display: inline-block;
+        }
+    </style>
+
+    <body>
+        <div class="card-container">
+            <div class="card">
+                <img class="card__image" src="img/rome.jpg" alt="" />
+                <div class="card__body">
+                    <h3 class="card__title">Rome, Italty</h3>
+                    <p class="card__price">$5,42k</p>
+                    <div class="card__trip">
+                        <img src="img/arrow.svg" alt="" class="card__trip-icon" />
+                        <p class="card__trip-duration">10 Days Trip</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

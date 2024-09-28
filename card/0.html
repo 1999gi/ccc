@@ -1,112 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-      background-color: #828282;
-      padding: 200px;
-      font-family: "Helvetica Neue";
-    }
+        body {
+            background-color: #828282;
+            padding: 200px;
+            font-family: "Helvetica Neue";
+        }
 
-    @font-face {
-      font-family: "Helvetica Neue";
-      font-weight: 400;
-      src: url("HelveticaNeueCyr-Roman.woff2");
-    }
+        @font-face {
+            font-family: "Helvetica Neue";
+            font-weight: 400;
+            src: url("HelveticaNeueCyr-Roman.woff2");
+        }
 
-    @font-face {
-      font-family: "Helvetica Neue";
-      font-weight: 700;
-      src: url("HelveticaNeueCyr-Bold.woff2");
-    }
+        @font-face {
+            font-family: "Helvetica Neue";
+            font-weight: 700;
+            src: url("HelveticaNeueCyr-Bold.woff2");
+        }
 
-    @font-face {
-      font-family: "Helvetica Neue";
-      font-weight: 900;
-      src: url("HelveticaNeueCyr-Black.woff2");
-    }
+        @font-face {
+            font-family: "Helvetica Neue";
+            font-weight: 900;
+            src: url("HelveticaNeueCyr-Black.woff2");
+        }
 
-    .card {
-      color: #fff;
-      box-shadow: 0px 4px 52px 0px #00000029;
-      width: 420px;
-      border-radius: 15px;
-      padding: 60px 90px;
-      display: inline-block;
+        .card {
+            color: #fff;
+            box-shadow: 0px 4px 52px 0px #00000029;
+            width: 420px;
+            border-radius: 15px;
+            padding: 60px 90px;
+            display: inline-block;
 
-      background: url("placeholder.jpg") 0 0 / cover no-repeat;
-      width: 540px;
-      height: 510px;
-    }
+            background: url("placeholder.jpg") 0 0 / cover no-repeat;
+            width: 540px;
+            height: 510px;
+        }
 
-    .status {
-      background-color: gray;
-      padding: 5px;
-      display: inline-block;
-      border-radius: 10px;
-      margin-bottom: 65px;
-    }
+        .status {
+            background-color: gray;
+            padding: 5px;
+            display: inline-block;
+            border-radius: 10px;
+            margin-bottom: 65px;
+        }
 
-    .date {
-      font-size: 12px;
-      margin-bottom: 25px;
-    }
+        .date {
+            font-size: 12px;
+            margin-bottom: 25px;
+        }
 
-    .persona {
-      border-radius: 7px;
-      color: white;
-    }
+        .persona {
+            border-radius: 7px;
+            color: white;
+        }
 
-    .story {
-      border-radius: 7px;
-      font-size: 13px;
-    }
+        .story {
+            border-radius: 7px;
+            font-size: 13px;
+        }
 
-    .icon {
-      display: inline-block;
-      margin-right: 24px;
-    }
+        .icon {
+            display: inline-block;
+            margin-right: 24px;
+        }
 
-    .icon:last-child {
-      margin-right: 0px;
-    }
+        .icon:last-child {
+            margin-right: 0px;
+        }
 
-    .icon-photo {
-      margin-right: 12px;
-    }
+        .icon-photo {
+            margin-right: 12px;
+        }
 
-    .icon-text {
-      display: inline-block;
-    }
-  </style>
-  <body>
-    <div class="card">
-      <p class="status">BREAKFAST</p>
-      <p class="date">05 july 2016</p>
-      <p class="persona">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-      </p>
-      <p class="story">Leson Keller</p>
-      <div class="icons">
-        <div class="icon">
-          <img class="icon-photo" src="comments.svg" alt="" />
-          <p class="icon-text">275</p>
+        .icon-text {
+            display: inline-block;
+        }
+    </style>
+    <body>
+        <div class="card">
+            <p class="status">BREAKFAST</p>
+            <p class="date">05 july 2016</p>
+            <p class="persona">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="story">Leson Keller</p>
+            <div class="icons">
+                <div class="icon">
+                    <img class="icon-photo" src="img/comments.svg" alt="" />
+                    <p class="icon-text">275</p>
+                </div>
+                <div class="icon">
+                    <img class="icon-photo" src="img/eye.svg" alt="" />
+                    <p class="icon-text">12</p>
+                </div>
+            </div>
         </div>
-        <div class="icon">
-          <img class="icon-photo" src="eye.svg" alt="" />
-          <p class="icon-text">12</p>
-        </div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
