@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        body {
+            padding: 20px;
+        }
+
+        .box {
+            width: 200px;
+            height: 400px;
+            background-color: tomato;
+            background-image: url(https://images.hdqwalls.com/download/lake-ultra-hd-4k-7f-1024x768.jpg);
+            /* background-size: 100% 100%; */
+            background-size: cover;
+            background-position: -120px 0;
+        }
+
+        .parent {
+            width: 200px;
+            height: 200px;
+            border: 4px solid #000;
+        }
+
+        .img {
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+
+        .card {
+            width: 32%;
+            display: inline-block;
+            border: 2px solid #000;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .card-image {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+    <body>
+        <div class="box"></div>
+        <div class="parent">
+            <img class="img" src="https://images.hdqwalls.com/download/lake-ultra-hd-4k-7f-1024x768.jpg" alt="" />
+        </div>
+
+        <div class="card">
+            <h3 class="title">Lorem, ipsum.</h3>
+            <img
+                style="object-position: 0 48%"
+                class="card-image"
+                src="https://avatars.mds.yandex.net/i?id=5ca71301442eecbb474623adb774992c_l-2480510-images-thumbs&n=13"
+                alt=""
+            />
+        </div>
+
+        <div class="card">
+            <h3 class="title">Lorem, ipsum.</h3>
+            <img
+                style="object-position: 0 20%"
+                class="card-image"
+                src="https://avatars.mds.yandex.net/i?id=55cb624f1404b8132269042635883b5f_l-5273574-images-thumbs&n=13"
+                alt=""
+            />
+        </div>
+
+        <div class="card">
+            <h3 class="title">Lorem, ipsum.</h3>
+            <img
+                style="object-position: 0 0"
+                class="card-image"
+                src="https://avatars.mds.yandex.net/i?id=25edfdb8f2e0d5d458995c0b1e9bd42c_l-10256621-images-thumbs&n=13"
+                alt=""
+            />
+        </div>
+    </body>
+</html>
