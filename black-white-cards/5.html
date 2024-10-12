@@ -1,232 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      @font-face {
-        font-family: "Inter-Hewn";
-        font-weight: 400;
-        src: url("Inter-Hewn.otf");
-      }
-      .card {
-        background-color: #ffffff;
-        box-shadow: 0px 4px 52px 0px #00000029;
-        width: 350px;
-        border-radius: 15px;
-        padding: 40px 40px 48px 40px;
-        margin: 20px;
-        display: inline-block;
-      }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            @font-face {
+                font-family: "Inter-Hewn";
+                font-weight: 400;
+                src: url("Inter-Hewn.otf");
+            }
+            .card {
+                background-color: #ffffff;
+                box-shadow: 0px 4px 52px 0px #00000029;
+                width: 350px;
+                border-radius: 15px;
+                padding: 40px 40px 48px 40px;
+                margin: 20px;
+                display: inline-block;
+            }
 
-      .persona {
-        background: #ddf5fc;
-        border-radius: 8px;
-        padding: 10px;
-      }
+            .persona {
+                background: #ddf5fc;
+                border-radius: 8px;
+                padding: 10px;
+            }
 
-      .story {
-        background: #e9fcdd;
-        margin-top: 19px;
-        border-radius: 8px;
-        padding: 10px;
-      }
-      .links {
-        background-color: whitesmoke;
-        margin-top: 19px;
-        border-radius: 8px;
-        padding: 10px;
-      }
-      .to {
-        background-color: whitesmoke;
-        margin-top: 19px;
-        border-radius: 8px;
-        padding: 10px;
-      }
-      .notes {
-        background-color: white;
-        border: 1px solid yellow;
-        margin-top: 19px;
-        border-radius: 8px;
-        padding: 10px;
-      }
-      .status {
-        background-color: #e9e9e9cc;
-        padding: 5px;
-        display: inline-block;
-        border-radius: 8px;
-        box-shadow: 0px 4px 10px 0px #e9e9e9cc;
-      }
-      .date {
-        font-size: 8px;
-        margin-top: 10px;
-        margin-bottom: 25px;
-      }
+            .story {
+                background: #e9fcdd;
+                margin-top: 19px;
+                border-radius: 8px;
+                padding: 10px;
+            }
+            .links {
+                background-color: whitesmoke;
+                margin-top: 19px;
+                border-radius: 8px;
+                padding: 10px;
+            }
+            .to {
+                background-color: whitesmoke;
+                margin-top: 19px;
+                border-radius: 8px;
+                padding: 10px;
+            }
+            .notes {
+                background-color: white;
+                border: 1px solid yellow;
+                margin-top: 19px;
+                border-radius: 8px;
+                padding: 10px;
+            }
+            .status {
+                background-color: #e9e9e9cc;
+                padding: 5px;
+                display: inline-block;
+                border-radius: 8px;
+                box-shadow: 0px 4px 10px 0px #e9e9e9cc;
+            }
+            .date {
+                font-size: 8px;
+                margin-top: 10px;
+                margin-bottom: 25px;
+            }
 
-      .title {
-        margin-bottom: 15px;
-      }
+            .title {
+                margin-bottom: 15px;
+            }
 
-      .tasks {
-        list-style-position: inside;
-      }
+            .tasks {
+                list-style-position: inside;
+            }
 
-      .card.dark {
-        background: #333;
-      }
-      .status-1 {
-        background-color: grey;
-        padding: 5px;
-        display: inline-block;
-        border-radius: 10px;
-        box-shadow: 0px 4px 10px 0px #000000;
-      }
-      .persona-1 {
-        background: #a2e0d9;
-        border-radius: 8px;
-        padding: 10px;
-      }
+            .card.dark {
+                background: #333;
+            }
+            .status-1 {
+                background-color: grey;
+                padding: 5px;
+                display: inline-block;
+                border-radius: 10px;
+                box-shadow: 0px 4px 10px 0px #000000;
+            }
+            .persona-1 {
+                background: #a2e0d9;
+                border-radius: 8px;
+                padding: 10px;
+            }
 
-      .story-1 {
-        background: #b2e0a2;
-        margin-top: 19px;
-        border-radius: 8px;
-        padding: 10px;
-      }
-      .links-1 {
-        background: #323232;
-        margin-top: 19px;
-        border-radius: 8px;
-        padding: 10px;
-        color: white;
-      }
-      .to-1 {
-        background-color: #323232;
-        margin-top: 19px;
-        border-radius: 8px;
-        padding: 10px;
-        color: white;
-      }
-      .notes-1 {
-        background-color: #1c1c20;
-        border: 1px solid yellow;
-        margin-top: 19px;
-        border-radius: 8px;
-        padding: 10px;
-        color: white;
-      }
-      .card.dark {
-        background-color: #1c1c20;
-      }
-      .date-1 {
-        font-size: 8px;
-        margin-top: 10px;
-        margin-bottom: 25px;
-        color: #767676;
-      }
-      .title-1 {
-        margin-bottom: 15px;
-        color: #f3f3f3;
-      }
-      .last-updated {
-        display: inline-block;
-        color: black;
-        padding: 5px;
-        border-radius: 8px;
-        border: 1px solid #e6e6e6;
-        box-shadow: 0px 4px 10px 0px #e9e9e9cc;
-      }
-      .last-updated-1 {
-        display: inline-block;
-        color: white;
-        padding: 5px;
-        border-radius: 8px;
-        border: 1px solid #525252;
-        box-shadow: 0px 4px 10px 0px #000000;
-      }
-      .gf {
-        margin-bottom: 7px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="card">
-      <div class="status">
-        <p>Status</p>
-      </div>
-      <p class="last-updated">V1</p>
-      <p class="date">Updated Feb 23, 2022 5:45PM</p>
-      <h2 class="title">Title</h2>
-      <div>
-        <div class="persona">
-          <h3 class="gf">🙍‍♂️Persona</h3>
-          <p>Who is this for?</p>
+            .story-1 {
+                background: #b2e0a2;
+                margin-top: 19px;
+                border-radius: 8px;
+                padding: 10px;
+            }
+            .links-1 {
+                background: #323232;
+                margin-top: 19px;
+                border-radius: 8px;
+                padding: 10px;
+                color: white;
+            }
+            .to-1 {
+                background-color: #323232;
+                margin-top: 19px;
+                border-radius: 8px;
+                padding: 10px;
+                color: white;
+            }
+            .notes-1 {
+                background-color: #1c1c20;
+                border: 1px solid yellow;
+                margin-top: 19px;
+                border-radius: 8px;
+                padding: 10px;
+                color: white;
+            }
+            .card.dark {
+                background-color: #1c1c20;
+            }
+            .date-1 {
+                font-size: 8px;
+                margin-top: 10px;
+                margin-bottom: 25px;
+                color: #767676;
+            }
+            .title-1 {
+                margin-bottom: 15px;
+                color: #f3f3f3;
+            }
+            .last-updated {
+                display: inline-block;
+                color: black;
+                padding: 5px;
+                border-radius: 8px;
+                border: 1px solid #e6e6e6;
+                box-shadow: 0px 4px 10px 0px #e9e9e9cc;
+            }
+            .last-updated-1 {
+                display: inline-block;
+                color: white;
+                padding: 5px;
+                border-radius: 8px;
+                border: 1px solid #525252;
+                box-shadow: 0px 4px 10px 0px #000000;
+            }
+            .gf {
+                margin-bottom: 7px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <div class="status">
+                <p>Status</p>
+            </div>
+            <p class="last-updated">V1</p>
+            <p class="date">Updated Feb 23, 2022 5:45PM</p>
+            <h2 class="title">Title</h2>
+            <div>
+                <div class="persona">
+                    <h3 class="gf">🙍‍♂️Persona</h3>
+                    <p>Who is this for?</p>
+                </div>
+
+                <div class="story">
+                    <h3 class="gf">📖 User story</h3>
+                    <p>As a user I would like to...</p>
+                </div>
+
+                <div class="links">
+                    <h3 class="gf">⛓️Links</h3>
+                    <p>Figjam</p>
+                </div>
+
+                <div class="to">
+                    <h3 class="gf">✅To Do</h3>
+                    <ul class="tasks">
+                        <li>Task 1</li>
+                        <li>Task 2</li>
+                    </ul>
+                </div>
+                <div class="notes">
+                    <h3 class="gf">✏️Notes</h3>
+                    <p>Start typing...</p>
+                </div>
+            </div>
         </div>
+        <div class="card dark">
+            <div class="status-1">
+                <p>Status</p>
+            </div>
+            <p class="last-updated-1">V1</p>
+            <p class="date-1">Updated Feb 23, 2022 5:45PM</p>
+            <h2 class="title-1">Title</h2>
+            <div>
+                <div class="persona-1">
+                    <h3 class="gf">🙍‍♂️Persona</h3>
+                    <p>Who is this for?</p>
+                </div>
 
-        <div class="story">
-          <h3 class="gf">📖 User story</h3>
-          <p>As a user I would like to...</p>
-        </div>
+                <div class="story-1">
+                    <h3 class="gf">📖User story</h3>
+                    <p>As a user I would like to...</p>
+                </div>
 
-        <div class="links">
-          <h3 class="gf">⛓️Links</h3>
-          <p>Figjam</p>
-        </div>
+                <div class="links-1">
+                    <h3 class="gf">⛓️Links</h3>
+                    <p>Figjam</p>
+                </div>
 
-        <div class="to">
-          <h3 class="gf">✅To Do</h3>
-          <ul class="tasks">
-            <li>Task 1</li>
-            <li>Task 2</li>
-          </ul>
+                <div class="to-1">
+                    <h3 class="gf">✅To Do</h3>
+                    <ul class="tasks">
+                        <li>Task 1</li>
+                        <li>Task 2</li>
+                    </ul>
+                </div>
+                <div class="notes-1">
+                    <h3 class="gf">✏️Notes</h3>
+                    <p>Start typing...</p>
+                </div>
+            </div>
         </div>
-        <div class="notes">
-          <h3 class="gf">✏️Notes</h3>
-          <p>Start typing...</p>
-        </div>
-      </div>
-    </div>
-    <div class="card dark">
-      <div class="status-1">
-        <p>Status</p>
-      </div>
-      <p class="last-updated-1">V1</p>
-      <p class="date-1">Updated Feb 23, 2022 5:45PM</p>
-      <h2 class="title-1">Title</h2>
-      <div>
-        <div class="persona-1">
-          <h3 class="gf">🙍‍♂️Persona</h3>
-          <p>Who is this for?</p>
-        </div>
-
-        <div class="story-1">
-          <h3 class="gf">📖User story</h3>
-          <p>As a user I would like to...</p>
-        </div>
-
-        <div class="links-1">
-          <h3 class="gf">⛓️Links</h3>
-          <p>Figjam</p>
-        </div>
-
-        <div class="to-1">
-          <h3 class="gf">✅To Do</h3>
-          <ul class="tasks">
-            <li>Task 1</li>
-            <li>Task 2</li>
-          </ul>
-        </div>
-        <div class="notes-1">
-          <h3 class="gf">✏️Notes</h3>
-          <p>Start typing...</p>
-        </div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>

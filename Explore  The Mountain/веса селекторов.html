@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        /* p#id1 - ищем параграф, у которого id="id1"  */
+        /* p.text - ищем параграф, у которого class="text" */
+        /* .list#id2 - ищем любой тег, у которого class="list" и id="id2"  */
+        /* .a.b.c - ищем любой тег, у которого class="a" и class="b" и class="c" */
+        /* Пробел значит, что мы ищем внутри */
+
+        /* Вес - количество селекторов id, количество селекторов class, количество селекторов tag */
+
+        /* 2, 5, 2 */
+        p#id1 p.text .list#id2 .a.b.c {
+            background-color: slateblue;
+        }
+
+        /* 1, 3, 4 */
+        p.text.test#a div ul.list li {
+            background-color: peachpuff;
+        }
+
+        .text {
+            background-color: slateblue;
+        }
+
+        .text {
+            background-color: ghostwhite;
+        }
+    </style>
+    <body>
+        <p class="text">p text</p>
+        <div class="text">div text</div>
+
+        <p id="id1">
+            <p class="text">
+                  <element class="list" id="id2">
+                      <element class="a b c"></element>
+                  </element>
+            </p>
+        </p>
+
+    </body>
+</html>
