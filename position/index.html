@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+
+            /* relative - относительное */
+            /* position: relative; */
+            /* left: 0; */
+            /* top: 0; */
+            /* right: 0; */
+            /* bottom: 0; */
+
+            padding-top: 20px;
+        }
+
+        .child {
+            background-color: slateblue;
+            position: absolute;
+            /* 
+                position: absolute
+                1) Элемент пропадает из потока документа (как будто его удалили)
+                2) Элемент становится блочно-строчным
+                3) left, top, right, bottom
+                4) Элемент идет по своим родителям и ищет первого родителя с position: relative
+                и позиционируется относительно него. 
+                Если такого родителя нет, то позиционируется относительно окна браузера
+            */
+            /* width: 100px; */
+            /* height: 100px; */
+
+            left: 50%;
+            top: 50%;
+            /* right: 0; */
+            /* bottom: 0; */
+        }
+
+        .container {
+            width: 150px;
+            margin-left: 50px;
+            background-color: lightsalmon;
+        }
+    </style>
+    <body>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
+            iusto eum excepturi officiis repellat et, sint facere quasi commodi
+            eos, vel minima quas consectetur, non perspiciatis? Sit labore
+            doloremque deserunt?
+        </p>
+        <div class="box">
+            <div class="container">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+                expedita officiis ratione aspernatur, unde excepturi similique
+                modi.
+                <span class="child">child text</span>
+                Veritatis vel odit ducimus dolorem? Magni praesentium molestias
+                incidunt quae vel consectetur eos!
+            </div>
+        </div>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat
+            iusto eum excepturi officiis repellat et, sint facere quasi commodi
+            eos, vel minima quas consectetur, non perspiciatis? Sit labore
+            doloremque deserunt?
+        </p>
+    </body>
+</html>
