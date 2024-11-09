@@ -45,6 +45,7 @@
     </style>
     <body>
         <div class="header">
+            <!-- контейнер -->
             <div class="header__links">
                 <a href="" class="header__link">veterinarians</a>
                 <a href="" class="header__link">how it works </a>
@@ -66,103 +67,159 @@
                     The pet pharmacy humans are jealousof.
                 </h1>
                 <p class="hero__text">
+                    <!-- Yelp, Google, Facebook -->
                     5 stars on Yelp, Google and Facebook because your best
                     friends deseves onlythe best in pet care.
                 </p>
-                <button class="hero__button">Try mixlub</button>
+                <button class="hero__button">Try Mixlub</button>
             </div>
         </div>
-    </body>
-    <body>
+        <!-- dog -> experience -->
         <div class="dog">
+            <!-- container -->
             <div class="dog__title"></div>
-            <div class="dog__container">
-                <h1 class="dog__title"></h1>
-                <p class="dog__text"></p>
-                <h1 class="dog__title"></h1>
-                <p class="dog__text"></p>
-                <h1 class="dog__title"></h1>
-                <p class="dog__text"></p>
+            <!-- img -->
+            <div class="experience__list">
+                <div class="experience__list-item">
+                    <h3 class="experience__list-item-title"></h3>
+                    <p class="experience__list-item-text"></p>
+                </div>
+                <hr />
+                <div class="experience__list-item">
+                    <h3 class="experience__list-item-title"></h3>
+                    <p class="experience__list-item-text"></p>
+                </div>
+                <hr />
+                <div class="experience__list-item">
+                    <h3 class="experience__list-item-title"></h3>
+                    <p class="experience__list-item-text"></p>
+                </div>
             </div>
         </div>
         <div class="works">
             <div class="works__container">
-                <div class="works__rrr">
-                    <h1 class="works__rp"></h1>
-                    <p class="works__rp"></p>
-                <div></div>
-                <div class="works__rr">
-                    <h1 class="works__p"></h1>
-                    <p class="works__p"></p>
-                 <div class="works__r">
-                     <h1 class="works__p2"></h1>
-                     <p class="works__p2"></p>    
+                <div class="works__cards">
+                    <div class="work__card"></div>
+                    <div class="work__card"></div>
+                    <div class="work__card"></div>
                 </div>
             </div>
         </div>
-    <div class="vet">
-        <div class="vet__container">
-            <h1 class="vet__title1"></h1>
-            <h1 class="vet__title2"></h1>
-            <p class="vet__text"></p>
-            <button class="hero__button"></button>
-        </div>
-    </div>
-    <div class="pets">
-        <div class="pets__header">
-            <h1 class="pets__title1"></h1>
-            <p class="pet__text1"></p>
-            <div class="pets__container">
-                <p class="pets__text"></p>
+
+        <!-- veterinarians -->
+        <div class="vet">
+            <div class="vet__container">
+                <!-- img -->
+                <!-- не h1, не title1, title2 -->
+                <h1 class="vet__title1"></h1>
+                <h1 class="vet__title2"></h1>
+                <p class="vet__text"></p>
+                <button class="hero__button"></button>
             </div>
         </div>
-    </div>
-    
-<div class="header">
-    <h1 class="header__title"></h1>
-    <p class="header__text"></p>
-</div>
-<div class="wild">
-    <div class="wild__container">
-        <a href="" class="wild__link"></a>
-        <h1 class="wild__title"></h1>
-        <h2 class="wild__title2"></h2>
-        <p class="wild__text"></p>
-        <div class="title"></div>
-    </div>
-</div>
-<div class="forest">
-    <div class="forest__container">
-        <a href="" class="wild__link"></a>
-        <h1 class="forest__title"></h1>
-        <h2 class="forest__title2"></h2>
-        <p class="forest__text"></p>
-        <div class="forest__title"></div>
-    </div>
-</div>
-<div class="website">
-    <div class="website__сcontainer">
-        <img class="website__screen" src="" alt="">
-        <img class="website__screen" src="" alt="">
-        <img class="website__screen" src="" alt="">
-        <img class="website__screen" src="" alt="">
-        <img class="website__screen" src="" alt="">
-    </div>
-</div>
-<div class="web">
-    <div class="web__сcontainer">
-        <div class="web__links"></div>
-        <div class="web__call"></div>
-        <div class="web__city"></div>
-        <div class="web__city2"></div>
-        <div class="web__social">
-           <img class="web__social__screnn1" src="" alt="">
-           <img class="web__social__screnn2" src="" alt="">
-           <img class="web__social__screnn3" src="" alt="">
-           <img class="web__social__screnn4" src="" alt="">
-           <img class="web__social__screnn5" src="" alt="">
+
+        <!-- reviews -->
+        <div class="pets">
+            <!-- container -->
+            <div class="pets__header">
+                <h1 class="pets__title1"></h1>
+                <p class="pet__text1"></p>
+
+                <!-- отдельно -->
+                <div class="pets__container">
+                    <!-- больше тегов внутри -->
+                    <p class="pets__text"></p>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-</body>
+
+        <div class="wild">
+            <div class="header">
+                <!-- не h1 -->
+                <h1 class="header__title"></h1>
+                <p class="header__text"></p>
+            </div>
+
+            <!-- задать один класс, обернуть в родителя -->
+            <div class="wild">
+                <!-- wild__container не нужен -->
+                <div class="wild__container">
+                    <!-- img -->
+
+                    <!-- просто текст -->
+                    <a href="" class="wild__link"></a>
+                    <h1 class="wild__title"></h1>
+
+                    <!-- ??? -->
+                    <h2 class="wild__title2"></h2>
+                    <p class="wild__text"></p>
+
+                    <!-- переделать на ссылку, изменить класс -->
+                    <div class="title"></div>
+                </div>
+            </div>
+
+            <!-- как в карточке выше -->
+            <div class="forest">
+                <div class="forest__container">
+                    <a href="" class="wild__link"></a>
+                    <h1 class="forest__title"></h1>
+                    <h2 class="forest__title2"></h2>
+                    <p class="forest__text"></p>
+                    <div class="forest__title"></div>
+                </div>
+            </div>
+
+            <!-- view more -->
+        </div>
+
+        <div class="partners">
+            <div class="partners__container">
+                <img class="partners__item" src="" alt="" />
+                <img class="partners__item" src="" alt="" />
+                <img class="partners__item" src="" alt="" />
+                <img class="partners__item" src="" alt="" />
+                <img class="partners__item" src="" alt="" />
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="web">
+            <div class="web__container">
+                <div class="web__links">
+                    <div class="web__column">
+                        <div class="web__column-item">
+                            <h4 class="web__column-item-title"></h4>
+                            <ul class="web__column-item-links">
+                                <li class="web__column-item-link"></li>
+                                <li class="web__column-item-link"></li>
+                                <li class="web__column-item-link"></li>
+                                <li class="web__column-item-link"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- доделать другие колонки -->
+                    <div class="web__column">
+                        <div class="web__column-item">
+                            <h4 class="web__column-item-title">Call or Text</h4>
+                            <p class="web__column-item-link"></p>
+                        </div>
+                        <div class="web__column-item">
+                            <h4 class="web__column-item-title">Email</h4>
+                            <p class="web__column-item-link"></p>
+                        </div>
+                        <div class="web__column-item">
+                            <h4 class="web__column-item-title">Fax</h4>
+                            <p class="web__column-item-link"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="web__copyright">
+                    <p>© 2021 Mixlab, Inc.</p>
+                    <p>Privacy Policy.</p>
+                    <p>Terms of Service</p>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
