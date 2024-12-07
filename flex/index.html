@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            border: 1px solid #000;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            height: 100px;
+            gap: 10px;
+
+            /* Управляет расположением элементов вдоль основной оси при наличии свободного места */
+            justify-content: start;
+
+            /* Управляет расположением элементов вдоль поперечной оси при наличии свободного места */
+            /* align-items: stretch; */
+        }
+
+        .flex-element:nth-child(2) {
+            background-color: slateblue;
+
+            /* разрешаем элементу увелечиваться вдоль основной оси, занимая все доступное пространство */
+            /* flex-grow: 1; */
+        }
+    </style>
+    <body>
+        <div class="flex-container">
+            <!-- Всегда выстраиваются вдоль основной оси -->
+            <div class="flex-element">1</div>
+            <div class="flex-element">2</div>
+            <div class="flex-element">3</div>
+            <div class="flex-element">4</div>
+        </div>
+    </body>
+</html>
