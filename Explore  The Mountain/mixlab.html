@@ -12,23 +12,22 @@
             box-sizing: border-box;
         }
 
-        .header__flex-element {
-            display: inline-block;
-            margin-right: 50px;
-        }
-
-        .header__buttons {
-            display: inline-block;
+        .header__links {
+            display: flex;
+            gap: 30px;
         }
 
         .header__link {
             padding: 10px;
             margin-left: 10px;
         }
+
         .header__container {
             display: flex;
             justify-content: space-between;
-            height: 40px;
+            align-items: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
 
         .hero {
@@ -51,6 +50,7 @@
             color: #000000;
             margin-bottom: 32px;
             font-size: 55px;
+            font-weight: 400;
         }
 
         .hero__text {
@@ -64,10 +64,10 @@
             color: white;
             border-radius: 25px;
             background-color: #6f1eaa;
-            padding-left: 30px;
-            padding-right: 30px;
-            padding-top: 10px;
-            padding-bottom: 10px;
+
+            border: none;
+            padding: 15px 40px 15px 40px; /* верх-право-низ-лево */
+            padding: 15px 40px; /* верх-низ лево-право */
         }
         .photow {
             position: relative;
@@ -80,14 +80,15 @@
             bottom: 800px;
         }
         .header__button-flex-element {
-            font-size: 10px;
+            font-size: 14px;
             color: white;
             border-radius: 25px;
             background-color: #6f1eaa;
-            padding-left: 15px;
-            padding-right: 15px;
-            padding-bottom: 5px;
-            padding-top: 5px;
+            padding-left: 43px;
+            padding-right: 43px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            border: none;
         }
         .photov {
             position: relative;
@@ -95,28 +96,34 @@
             bottom: 750px;
             height: 800px;
         }
-        .www {
-            color: orange;
-            font-size: 30px;
-            margin-left: 200px;
+        .header__logo {
+        }
+        body {
+            font-family: "Roboto";
+        }
+        .header__buttons {
+            display: flex;
+            gap: 33px;
+            align-items: center;
         }
     </style>
     <body>
         <div class="header">
+            <!-- /* flex-container */ -->
             <div class="header__container">
+                <!-- /* flex-element */ -->
                 <div class="header__links">
                     <div class="header__flex-element">veterinarians</div>
                     <div class="header__flex-element">how it works</div>
                     <div class="header__flex-element">about us</div>
                     <div class="header__flex-element">blog</div>
                     <div class="header__flex-element">shop</div>
-                    <div class="header__flex-element">
-                        <div class="www">Mixlab</div>
-                    </div>
                 </div>
 
-                <img src="" alt="" class="header__logo" />
+                <!-- /* flex-element */ -->
+                <img src="photo/Vector.png" alt="" class="header__logo" />
 
+                <!-- /* flex-element */ -->
                 <div class="header__buttons">
                     <a href="" class="header__flex-element"
                         >veterinarian lodin</a
@@ -130,7 +137,8 @@
         <div class="hero">
             <div class="hero__container" style="background-color: #fef7e5">
                 <h1 class="hero__title">
-                    The pet pharmacy humans are jealous of.
+                    The pet pharmacy <br />
+                    humans are jealous of.
                 </h1>
                 <p class="hero__text">
                     5 stars on <a href="#" class="hero__text-Yelp">Yelp</a>,
