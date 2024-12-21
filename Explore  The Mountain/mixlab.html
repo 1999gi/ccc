@@ -12,8 +12,9 @@
             box-sizing: border-box;
         }
 
-        .header__links {
+        .header__flex-element {
             display: inline-block;
+            margin-right: 50px;
         }
 
         .header__buttons {
@@ -24,11 +25,17 @@
             padding: 10px;
             margin-left: 10px;
         }
+        .header__container {
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+        }
 
         .hero {
             text-align: center;
             padding-top: 100px;
             background-color: #fef7e5;
+            font-family: "Roboto", "Arial", sans-serif;
         }
 
         .hero__container {
@@ -37,6 +44,7 @@
             height: 600px;
             max-width: 1000px;
             margin: 0 auto;
+            padding-left: 20px;
         }
 
         .hero__title {
@@ -52,41 +60,70 @@
         }
 
         .hero__button {
-            font-size: 25px;
+            font-size: 20px;
             color: white;
             border-radius: 25px;
-            padding: 10px;
             background-color: #6f1eaa;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
         .photow {
             position: relative;
-            bottom: 700px;
+            bottom: 900px;
             height: 600px;
         }
         .photox {
             position: relative;
             left: 650px;
-            bottom: 600px;
+            bottom: 800px;
+        }
+        .header__button-flex-element {
+            font-size: 10px;
+            color: white;
+            border-radius: 25px;
+            background-color: #6f1eaa;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+        .photov {
+            position: relative;
+            left: 906px;
+            bottom: 750px;
+            height: 800px;
+        }
+        .www {
+            color: orange;
+            font-size: 30px;
+            margin-left: 200px;
         }
     </style>
     <body>
         <div class="header">
             <div class="header__container">
                 <div class="header__links">
-                    <a href="" class="header__link">veterinarians</a>
-                    <a href="" class="header__link">how it works </a>
-                    <a href="" class="header__link">about us</a>
-                    <a href="" class="header__link"> blog</a>
-                    <a href="" class="header__link">shop</a>
+                    <div class="header__flex-element">veterinarians</div>
+                    <div class="header__flex-element">how it works</div>
+                    <div class="header__flex-element">about us</div>
+                    <div class="header__flex-element">blog</div>
+                    <div class="header__flex-element">shop</div>
+                    <div class="header__flex-element">
+                        <div class="www">Mixlab</div>
+                    </div>
                 </div>
 
                 <img src="" alt="" class="header__logo" />
 
                 <div class="header__buttons">
-                    <a href="" class="header__button-link"
+                    <a href="" class="header__flex-element"
                         >veterinarian lodin</a
                     >
-                    <button class="header__button">Try mixlub</button>
+                    <button class="header__button-flex-element">
+                        Try mixlub
+                    </button>
                 </div>
             </div>
         </div>
@@ -96,10 +133,9 @@
                     The pet pharmacy humans are jealous of.
                 </h1>
                 <p class="hero__text">
-                    <!-- Todo -->
-                    5 stars on <a href="#" class="hero__text__Yelp">Yelp</a>,
-                    <a href="#" class="hero__text__Google">Google</a> and
-                    <a href="#" class="hero__text__Facebook">Facebook</a>
+                    5 stars on <a href="#" class="hero__text-Yelp">Yelp</a>,
+                    <a href="#" class="hero__text-Google">Google</a> and
+                    <a href="#" class="hero__text-Facebook">Facebook</a>
                     because your <br />
                     best friend deserves only the best in pet care.
                 </p>
@@ -107,7 +143,8 @@
             </div>
         </div>
         <img class="photow" src="photo/123.png" />
-        <img class="photox" src="photo/444.png" />
+        <img class="photox" src="photo/Frame.png" />
+        <img class="photov" src="photo/5555.png" />
         <div class="experience">
             <div class="experience__container">
                 <div class="experience__title"></div>
@@ -132,18 +169,20 @@
         </div>
         <div class="works">
             <div class="works__container">
-                <div class="works__cards">
-                    <div class="work__card__first">
-                        <div class="work__card__first-title"></div>
-                        <div class="work__card__first-text"></div>
-                    </div>
-                    <div class="work__card"></div>
-                    <div class="work__card__second-title"></div>
-                    <div class="work__card__second-text"></div>
-                    <div class="work__card">
-                        <div class="work__card__third-title"></div>
-                        <div class="work__card__third-text"></div>
-                    </div>
+                <div class="works__card">
+                    <img src="" alt="" />
+                    <div class="works__card-title"></div>
+                    <div class="works__card-text"></div>
+                </div>
+                <div class="works__card">
+                    <img src="" alt="" />
+                    <div class="works__card-title"></div>
+                    <div class="works__card-text"></div>
+                </div>
+                <div class="works__card">
+                    <img src="" alt="" />
+                    <div class="works__card-title"></div>
+                    <div class="works__card-text"></div>
                 </div>
             </div>
         </div>
@@ -170,9 +209,9 @@
             <h1 class="reviews__title">Pets love Mixlab!</h1>
             <div class="reviews__subtitle">
                 See why we're 5 stars on
-                <a href="#" class="hero__text__Yelp">Yelp</a>,
-                <a href="#" class="hero__text__Google">Google</a> and
-                <a href="#" class="hero__text__Facebook">Facebook</a>
+                <a href="#" class="hero__text-Yelp">Yelp</a>,
+                <a href="#" class="hero__text-Google">Google</a> and
+                <a href="#" class="hero__text-Facebook">Facebook</a>
             </div>
             <div class="reviews__conteiner">
                 <img class="reviews__photo" src="" alt="" />
@@ -187,17 +226,17 @@
             <div class="wild__contenier">
                 <div class="wild__compouding">
                     <img class="wild__photo" alt="" />
-                    <p class="wild__compouding__subtitle"></p>
-                    <p class="wild__compouding__title"></p>
-                    <p class="wild__compouding__text"></p>
-                    <a href="#" class="wild__compouding__article"></a>
+                    <p class="wild__compouding-subtitle"></p>
+                    <p class="wild__compouding-title"></p>
+                    <p class="wild__compouding-text"></p>
+                    <a href="#" class="wild__compouding-article"></a>
                 </div>
                 <div class="wild__interview">
                     <img class="wild__photo" alt="" />
-                    <p class="wild____interview__subtitle"></p>
-                    <p class="wild__interview__title"></p>
-                    <p class="wild__interview__text"></p>
-                    <a href="#" class="wild__interview__article"></a>
+                    <p class="wild____interview-subtitle"></p>
+                    <p class="wild__interview-title"></p>
+                    <p class="wild__interview-text"></p>
+                    <a href="#" class="wild__interview-article"></a>
                 </div>
             </div>
         </div>
