@@ -3,130 +3,31 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
         <title>Document</title>
     </head>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-
-        .header__links {
-            display: flex;
-            gap: 30px;
-        }
-
-        .header__link {
-            padding: 10px;
-            margin-left: 10px;
-        }
-
-        .header__container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-
-        .hero {
-            text-align: center;
-            padding-top: 100px;
-            background-color: #fef7e5;
-            font-family: "Roboto", "Arial", sans-serif;
-        }
-
-        .hero__container {
-            color: #000000;
-            width: 100%;
-            height: 600px;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding-left: 20px;
-        }
-
-        .hero__title {
-            color: #000000;
-            margin-bottom: 32px;
-            font-size: 55px;
-            font-weight: 400;
-        }
-
-        .hero__text {
-            color: #000000;
-            margin-bottom: 32px;
-            font-size: 20px;
-        }
-
-        .hero__button {
-            font-size: 20px;
-            color: white;
-            border-radius: 25px;
-            background-color: #6f1eaa;
-
-            border: none;
-            padding: 15px 40px 15px 40px; /* верх-право-низ-лево */
-            padding: 15px 40px; /* верх-низ лево-право */
-        }
-        .photow {
-            position: relative;
-            bottom: 900px;
-            height: 600px;
-        }
-        .photox {
-            position: relative;
-            left: 650px;
-            bottom: 800px;
-        }
-        .header__button-flex-element {
-            font-size: 14px;
-            color: white;
-            border-radius: 25px;
-            background-color: #6f1eaa;
-            padding-left: 43px;
-            padding-right: 43px;
-            padding-bottom: 10px;
-            padding-top: 10px;
-            border: none;
-        }
-        .photov {
-            position: relative;
-            left: 906px;
-            bottom: 750px;
-            height: 800px;
-        }
-        .header__logo {
-        }
-        body {
-            font-family: "Roboto";
-        }
-        .header__buttons {
-            display: flex;
-            gap: 33px;
-            align-items: center;
-        }
-    </style>
     <body>
         <div class="header">
-            <!-- /* flex-container */ -->
             <div class="header__container">
-                <!-- /* flex-element */ -->
                 <div class="header__links">
-                    <div class="header__flex-element">veterinarians</div>
-                    <div class="header__flex-element">how it works</div>
-                    <div class="header__flex-element">about us</div>
-                    <div class="header__flex-element">blog</div>
-                    <div class="header__flex-element">shop</div>
+                    <div class="header__flex-element">Veterinarians</div>
+                    <div class="header__flex-element">How it works</div>
+                    <div class="header__flex-element">About us</div>
+                    <div class="header__flex-element">Blog</div>
+                    <div class="header__flex-element">Shop</div>
                 </div>
 
-                <!-- /* flex-element */ -->
                 <img src="photo/Vector.png" alt="" class="header__logo" />
 
-                <!-- /* flex-element */ -->
                 <div class="header__buttons">
                     <a href="" class="header__flex-element"
-                        >veterinarian lodin</a
+                        >Veterinarian login</a
                     >
                     <button class="header__button-flex-element">
                         Try mixlub
@@ -135,7 +36,7 @@
             </div>
         </div>
         <div class="hero">
-            <div class="hero__container" style="background-color: #fef7e5">
+            <div class="hero__container">
                 <h1 class="hero__title">
                     The pet pharmacy <br />
                     humans are jealous of.
@@ -150,111 +51,234 @@
                 <button class="hero__button">Try mixlub</button>
             </div>
         </div>
-        <img class="photow" src="photo/123.png" />
-        <img class="photox" src="photo/Frame.png" />
-        <img class="photov" src="photo/5555.png" />
         <div class="experience">
             <div class="experience__container">
-                <div class="experience__title"></div>
-                <img class="experience__photo" src="" alt="" />
-                <div class="experience__list">
-                    <div class="experience__list-item">
-                        <h3 class="experience__list-item-title"></h3>
-                        <p class="experience__list-item-text"></p>
-                    </div>
-                    <hr />
-                    <div class="experience__list-item">
-                        <h3 class="experience__list-item-title"></h3>
-                        <p class="experience__list-item-text"></p>
-                    </div>
-                    <hr />
-                    <div class="experience__list-item">
-                        <h3 class="experience__list-item-title"></h3>
-                        <p class="experience__list-item-text"></p>
+                <div class="experience__column">
+                    <h2 class="experience__title">
+                        We couldn’t find a <br />
+                        pharmacy experience worthy of our best buds— so we
+                        created one
+                    </h2>
+                    <img class="experience__photo" src="photo/999.png" alt="" />
+                </div>
+                <div class="experience__column">
+                    <div class="experience__list">
+                        <div class="experience__list-item">
+                            <h3 class="experience__list-item-title">
+                                Patients first, always
+                            </h3>
+                            <p class="experience__list-item-text">
+                                We know how stressful it can be when your pet
+                                needs meds. That’s why we offer free next-day
+                                delivery and even do same-day in NYC and LA. We
+                                got you.
+                            </p>
+                        </div>
+                        <hr class="experience__line" />
+                        <div class="experience__list-item">
+                            <h3 class="experience__list-item-title">
+                                Tailored care
+                            </h3>
+                            <p class="experience__list-item-text">
+                                We’ll work with you and your veterinarian to
+                                find the very best solution for your pet. With
+                                our custom compounded options, we can change the
+                                dosage, flavor and form. We even have a flavor
+                                guarantee with over 40 options!
+                            </p>
+                            <p class="experience__list-item-ps">
+                                P.S. Everyone seems to love the chicken-flavored
+                                chew treats!
+                            </p>
+                        </div>
+                        <hr class="experience__line" />
+                        <div class="experience__list-item">
+                            <h3 class="experience__list-item-title">
+                                Support, 7 days a week
+                            </h3>
+                            <p class="experience__list-item-text">
+                                You’re not alone. Text, call, or email us 7 days
+                                a week—we’ll answer and do our best to sprinkle
+                                in a bit of sunshine. ☀️
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="works">
+            <h1 class="works__caption">How it works</h1>
             <div class="works__container">
-                <div class="works__card">
-                    <img src="" alt="" />
-                    <div class="works__card-title"></div>
-                    <div class="works__card-text"></div>
+                <div class="works__cards">
+                    <div class="works__card">
+                        <div class="works__image">
+                            <img
+                                class="works__photo"
+                                src="photo/tyt.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="works__card-title">
+                            We receive your prescription
+                        </div>
+                        <div class="works__card-text">
+                            Either your veterinarian sends us a prescription or
+                            we reach out to them for you. Whatever is easiest!
+                        </div>
+                    </div>
+                    <div class="works__card">
+                        <div class="works__image">
+                            <img
+                                class="works__photo"
+                                src="photo/Rectangle (1).png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="works__card-title">
+                            We deliver your care package
+                        </div>
+                        <div class="works__card-text">
+                            Fast and free next-day delivery, straight to your
+                            door. Same-day in NYC and LA.
+                        </div>
+                    </div>
+                    <div class="works__card">
+                        <div class="works__image">
+                            <img
+                                class="works__photo"
+                                src="photo/rect.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="works__card-title">You treat your pet</div>
+                        <div class="works__card-text">
+                            Give your pet the care they need to feel better.
+                            Plus they can play with our included toy!
+                        </div>
+                    </div>
                 </div>
-                <div class="works__card">
-                    <img src="" alt="" />
-                    <div class="works__card-title"></div>
-                    <div class="works__card-text"></div>
-                </div>
-                <div class="works__card">
-                    <img src="" alt="" />
-                    <div class="works__card-title"></div>
-                    <div class="works__card-text"></div>
-                </div>
+                <button class="works__button">Learn More</button>
             </div>
         </div>
 
         <div class="veterinarians">
             <div class="veterinarians__container">
-                <img class="veterinarians__photo" src="" alt="" />
-                <div class="veterinarians__subtitle"></div>
-                <h class="veterinarians__title">
-                    We're here to support you and your practice
-                </h>
-                <p class="veterinarians__text">
-                    Mixlab offers a simple, fast, reliable (and fun) home
-                    delivery pharmacy service for your clients. No more delays,
-                    no more miscommunications, no more grumpy pets. It’s time to
-                    partner with a pharmacy that cares about customer experience
-                    as much as you do.
-                </p>
-                <button class="veterinarians__button"></button>
+                <div class="veterinarians__flex">
+                    <img
+                        class="veterinarians__photo"
+                        src="photo/000.png"
+                        alt=""
+                    />
+                    <div class="veterinarians__info">
+                        <div class="veterinarians__subtitle">
+                            FOR VETERINARIANS
+                        </div>
+                        <h class="veterinarians__title">
+                            We're here to support you and your practice
+                        </h>
+                        <p class="veterinarians__text">
+                            Mixlab offers a simple, fast, reliable (and fun)
+                            home delivery pharmacy service for your clients. No
+                            more delays, no more miscommunications, no more
+                            grumpy pets. It’s time to partner with a pharmacy
+                            that cares about customer experience as much as you
+                            do.
+                        </p>
+                        <button class="veterinarians__button">
+                            Learn more
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="reviews">
-            <h1 class="reviews__title">Pets love Mixlab!</h1>
-            <div class="reviews__subtitle">
-                See why we're 5 stars on
-                <a href="#" class="hero__text-Yelp">Yelp</a>,
-                <a href="#" class="hero__text-Google">Google</a> and
-                <a href="#" class="hero__text-Facebook">Facebook</a>
-            </div>
-            <div class="reviews__conteiner">
-                <img class="reviews__photo" src="" alt="" />
-                <p class="reviews__text"></p>
-                <p class="reviews__place"></p>
-                <p class="reviews__networks"></p>
+            <img class="reviews__photow" src="photo/Rec.png" alt="" />
+            <div class="reviews__container">
+                <h1 class="reviews__title">Pets love Mixlab!</h1>
+                <div class="reviews__subtitle">
+                    See why we're 5 stars on
+                    <a href="#" class="hero__text-link">Yelp</a>,
+                    <a href="#" class="hero__text-link">Google</a> and
+                    <a href="#" class="hero__text-link">Facebook</a>:&rpar;
+                </div>
+                <div class="reviews__flex">
+                    <img class="reviews__photo" src="photo/Frame1.png" alt="" />
+                    <div class="reviews__info">
+                        <p class="reviews__text">
+                            “Tootsie just received her Mixlab order and she’s so
+                            excited for it! Within two hours of ordering it got
+                            delivered to the house and its like she knew it was
+                            at the door. She absolutely hates taking her
+                            medicine but she truly loves her Mixlab box because
+                            it’s so informative, quick, easy to order but
+                            especially because includes a new toy each time!
+                            Thank you Mixlab for always taking care of her! She
+                            can’t wait to place her next order now!”
+                        </p>
+                        <p class="reviews__place">
+                            <img src="photo/Rectan.png" alt="" /> Tootsie, CA
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="wild">
-            <p class="wild_title"></p>
-            <p class="wild__text"></p>
-            <div class="wild__contenier">
-                <div class="wild__compouding">
-                    <img class="wild__photo" alt="" />
-                    <p class="wild__compouding-subtitle"></p>
-                    <p class="wild__compouding-title"></p>
-                    <p class="wild__compouding-text"></p>
-                    <a href="#" class="wild__compouding-article"></a>
-                </div>
-                <div class="wild__interview">
-                    <img class="wild__photo" alt="" />
-                    <p class="wild____interview-subtitle"></p>
-                    <p class="wild__interview-title"></p>
-                    <p class="wild__interview-text"></p>
-                    <a href="#" class="wild__interview-article"></a>
+            <p class="wild_title">In the Wild</p>
+            <p class="wild__text">
+                In The Wild is a collection of pieces to help close the
+                communication gap, <br />
+                while growing the love (and understanding) between you and your
+                best pal.
+            </p>
+            <div class="wild__flex">
+                <div class="wild__contenier">
+                    <div class="wild__interview">
+                        <img class="wild__photo" src="photo/ggg.png" alt="" />
+                        <div class="wild__card">
+                            <p class="wild__interview-subtitle">May 3, 2021</p>
+                            <p class="wild__interview-title">
+                                What is compounding?
+                            </p>
+                            <p class="wild__interview-text">
+                                Compounding is the art and science of preparing
+                                personalized medications.
+                            </p>
+                            <a href="#" class="wild__interview-article"
+                                >Read the article</a
+                            >
+                        </div>
+                    </div>
+                    <div class="wild__interview">
+                        <img
+                            class="wild__photo"
+                            src="photo/faranem.png"
+                            alt=""
+                        />
+                        <div class="wild__card">
+                            <p class="wild__interview-subtitle">
+                                June 15, 2021
+                            </p>
+                            <p class="wild__interview-title">Anxiety in Pets</p>
+                            <p class="wild__interview-text">
+                                View more View more
+                            </p>
+                            <a href="#" class="wild__interview-article"
+                                >Read the article</a
+                            >
+                        </div>
+                    </div>
                 </div>
             </div>
+            <button class="wild__button">View more</button>
         </div>
         <div class="partners">
             <div class="partners__container">
-                <img class="partners__item" src="" alt="" />
-                <img class="partners__item" src="" alt="" />
-                <img class="partners__item" src="" alt="" />
-                <img class="partners__item" src="" alt="" />
-                <img class="partners__item" src="" alt="" />
+                <img class="partners__item" src="photo/01.png" alt="" />
+                <img class="partners__item" src="photo/02.png" alt="" />
+                <img class="partners__item" src="photo/03.png" alt="" />
+                <img class="partners__item" src="photo/04.png" alt="" />
+                <img class="partners__item" src="photo/05.png" alt="" />
             </div>
         </div>
 
@@ -263,12 +287,36 @@
                 <div class="footer__links">
                     <div class="footer__column">
                         <div class="footer__column-item">
-                            <h4 class="footer__column-item-title"></h4>
+                            <h4 class="footer__column-item-title">
+                                Quick Links
+                            </h4>
                             <ul class="footer__column-item-links">
-                                <li class="footer__column-item-link"></li>
-                                <li class="footer__column-item-link"></li>
-                                <li class="footer__column-item-link"></li>
-                                <li class="footer__column-item-link"></li>
+                                <li class="footer__column-item-link">
+                                    Veterinarians
+                                </li>
+                                <li class="footer__column-item-link">
+                                    Products
+                                </li>
+                                <li class="footer__column-item-link">
+                                    Products
+                                </li>
+                                <li class="footer__column-item-link">
+                                    About us
+                                </li>
+                                <li class="footer__column-item-link">
+                                    About us
+                                </li>
+                                <li class="footer__column-item-link">Blog</li>
+                                <li class="footer__column-item-link">Shop</li>
+                                <li class="footer__column-item-link">
+                                    Careers
+                                </li>
+                                <li class="footer__column-item-link">
+                                    Veterinarian login
+                                </li>
+                                <li class="footer__column-item-link">
+                                    Contact us
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -278,19 +326,90 @@
                             <h4 class="footer__column-item-title">
                                 Call or Text
                             </h4>
-                            <p class="footer__column-item-link"></p>
+                            <p class="footer__column-item-link">
+                                (888) 901-4480
+                            </p>
                         </div>
                         <div class="footer__column-item">
                             <h4 class="footer__column-item-title">Email</h4>
-                            <p class="footer__column-item-link"></p>
+                            <p class="footer__column-item-link">
+                                hello@mixlabrx.com
+                            </p>
                         </div>
                         <div class="footer__column-item">
                             <h4 class="footer__column-item-title">Fax</h4>
-                            <p class="footer__column-item-link"></p>
+                            <p class="footer__column-item-link">
+                                (212) 967-0892
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="footer__column">
+                        <div class="footer__column-item">
+                            <h4 class="footer__column-item-title">
+                                New York City
+                            </h4>
+                            <p class="footer__column-item-link">
+                                336 West 37th St <br />
+                                Suite 850 <br />
+                                New York, NY 10018
+                            </p>
+                        </div>
+                        <div class="footer__column-item">
+                            <p class="footer__column-item-link">
+                                Mon-Sat 10am - 8pm ET <br />
+                                Sun 10am - 2pm ET
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="footer__column">
+                        <div class="footer__column-item">
+                            <h4 class="footer__column-item-title">
+                                Los Angeles
+                            </h4>
+                            <p class="footer__column-item-link">
+                                2223 Federal Ave <br />
+                                Los Angeles, CA 90064
+                            </p>
+                        </div>
+                        <div class="footer__column-item">
+                            <p class="footer__column-item-link">
+                                Mon-Sat 9am - 7pm PT <br />
+                                Sun 9am - 1pm PT
+                            </p>
+                        </div>
+                        <div class="footer__column">
+                            <h4 class="footer__column-item-title">Sosial</h4>
+                            <div class="footer__column-item">
+                                <img
+                                    class="footer__item-photo"
+                                    src="photo/Vect.png"
+                                    alt=""
+                                />
+                                <img
+                                    class="footer__item-photo"
+                                    src="photo/jjjj.png"
+                                    alt=""
+                                />
+                                <img
+                                    class="footer__item-photo"
+                                    src="photo/lllll.png"
+                                    alt=""
+                                />
+                                <img
+                                    class="footer__item-photo"
+                                    src="photo/Framooo.png"
+                                    alt=""
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="web__copyright">
+            </div>
+
+            <div class="copyright">
+                <div class="copyright-container">
                     <p>© 2021 Mixlab, Inc.</p>
                     <p>Privacy Policy.</p>
                     <p>Terms of Service</p>
